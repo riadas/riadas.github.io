@@ -97,6 +97,29 @@
         width: 100%;
       }
 
+      a {
+        text-decoration: none;
+      }
+
+      /* unvisited link */
+      a:link {
+        color:#1f47db;
+      }
+
+      a:visited {
+        color: #1f47db;
+      }
+
+      a:hover {
+        color: #1f47db;
+      }
+
+
+      .hoverable:hover {
+        background-color: #2453ff30;
+        border-radius: 3px;
+      }
+
     </style>
     <script src="https://kit.fontawesome.com/fa01341b71.js" crossorigin="anonymous"></script>
 
@@ -109,7 +132,7 @@
         <div id="header"> 
           <h1>Ria Das</h1>
           <div id="header-links">
-            <h1><a href="https://github.com/riadas"> <i class="far fa-file-alt"></i></a>&nbsp;&nbsp;
+            <h1><a href="files/Resume_Fall_2021.pdf"> <i class="far fa-file-alt"></i></a>&nbsp;&nbsp;
                 <a href="https://github.com/riadas"> <i class="fab fa-github"></i></a></h1>
           </div>          
         </div>
@@ -117,9 +140,9 @@
           <div id="intro">
             <div id="intro-text">
               <p>
-                  I am an MEng student at MIT, working with <a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a> in the Computer-Aided Programming Group
-                  and <a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a> in the Computational Cognitive Science Group.
-                  I am exploring the intersection of programming languages, artificial intelligence, and cognitive 
+                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer-Aided Programming Group
+                  and <span class="hoverable"><a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a></span> in the Computational Cognitive Science Group.
+                  I explore the intersection of programming languages, artificial intelligence, and cognitive 
                   science, with the goal of developing more human-like AI systems. Specifically, I investigate the hypothesis 
                   that program synthesis may be a route to achieving this goal. Previously, I received my BS degrees in 
                   computer science and math. 
@@ -130,7 +153,7 @@
             <img src="files/picture.jpg" style="width: 200px; height: 267px; margin-top: 20px;" alt="photo">
           </div> 
           <div id="rest">
-            <h1 style="font-size: 20px; margin-bottom: 10px;">Thesis (Ongoing Work)</h1>
+            <h1 style="font-size: 20px; margin-bottom: 10px;">Thesis (Ongoing)</h1>
             <p style="margin:0;">
               For my thesis, I have been working on modeling the human ability to efficiently learn 
               <i>causal theories</i> &ndash; explanations of which stimuli <i>cause</i> which changes in an environment &ndash;
@@ -142,7 +165,7 @@
             <p>
                 We have developed a simple domain to explore this hypothesis, consisting of Atari-style, 
                 time-varying grid worlds. We express causal mechanisms in these worlds
-                using a functional reactive programming language called <a href="https://github.com/riadas/Autumn.jl">Autumn</a>, which we designed to concisely
+                using a functional reactive programming language called <span class="hoverable"><a href="https://github.com/riadas/Autumn.jl">Autumn</a></span>, which we designed to concisely
                 capture these dynamics. Some Autumn programs are shown below.
             </p>
 
@@ -185,27 +208,27 @@
                 Synthesis of Reactive Programs with Structured Latent State. 
                 <i>Machine Learning and Causal </i>
                 <i>Inference Workshop (WHY-21)</i> and <i>Advances in Programming Languages and Neurosymbolic Systems Workshop (AIPLANS), NeurIPS 2021.</i> <br/> 
-                [<a href="files/Autumn_WHY21_Workshop_Submission (2).pdf">paper</a>, <a href="files/Autumn_WHY21_Workshop_Poster (1)-1.png">poster</a>]
+                [<span class="hoverable"><a href="files/Autumn_WHY21_Workshop_Submission (2).pdf">paper</a></span>, <span class="hoverable"><a href="files/Autumn_WHY21_Workshop_Poster (1)-1.png">poster</a></span>]
               </p>
 
               <p style="margin: 0; margin-top: 15px;">
                   Samuel Goldman, Ria Das, Kevin K. Yang, Connor W. Coley.
                   Machine learning modeling of family wide enzyme-substrate specificity screens. <i>Preprint.</i> <br>
-                  [<a href="https://arxiv.org/abs/2109.03900">paper</a>]
+                  [<span class="hoverable"><a href="https://arxiv.org/abs/2109.03900">paper</a></span>]
                 </p>
 
                 <p style="margin: 0; margin-top: 15px;">
                     Zenna Tavares, James Koppel, Xin Zhang, Ria Das, Armando Solar-Lezama.
                     A Language for Counterfactual Generative Models. 
                     <i>ICML 2021.</i><br>
-                    [<a href="http://proceedings.mlr.press/v139/tavares21a/tavares21a.pdf">paper</a>]
+                    [<span class="hoverable"><a href="http://proceedings.mlr.press/v139/tavares21a/tavares21a.pdf">paper</a></span>]
                   </p>  
 
                   <p style="margin: 0; margin-top: 15px;">
                       Zenna Tavares, Ria Das, Elizabeth Weeks, Kate S. Lin, Joshua B. Tenenbaum, Armando Solar-Lezama.
                       Causal Inductive Synthesis Corpus. 
                       <i>Computer-Aided Programming Workshop, NeurIPS 2020.</i><br>
-                      [<a href="https://openreview.net/pdf?id=rO24tIDmtSr">paper</a>, <a href="files/cisc_neurips_poster.pdf">poster</a>]
+                      [<span class="hoverable"><a href="https://openreview.net/pdf?id=rO24tIDmtSr">paper</a></span>, <span class="hoverable"><a href="files/cisc_neurips_poster.pdf">poster</a></span>]
                     </p>
 
 
