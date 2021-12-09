@@ -2,7 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+      integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+    $( document ).tooltip({
+                            position: { at: "center+35 center-24", collision: "none", 
+                             }
+                          });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WM5EMTD6Z"></script>
     <script>
@@ -160,7 +173,7 @@
               </p>
               <p>
                 My broad interests are in the following areas: program synthesis, neuro-symbolic techniques, 
-                probabilistic programs, computational cognitive science, causal inference, and formal methods.
+                probabilistic programs, formal methods, computational cognitive science, and causal inference.
               </p>
               <p>Feel free to contact me at [first][last]@mit.edu.</p>
             </div>
@@ -236,7 +249,7 @@
                     Zenna Tavares, James Koppel, Xin Zhang, <b>Ria Das</b>, Armando Solar-Lezama.
                     A Language for Counterfactual Generative Models. 
                     <i>ICML 2021.</i><br>
-                    [<span class="hoverable"><a href="files/tavares21a.pdf">paper</a></span>]
+                    [<span class="hoverable"><a href="files/tavares21a.pdf">paper</a></span>, <span style="color:#1f47db;" id="errata" class="hoverable" title="(adding shortly)">erratum</span>]
                   </p>  
 
                   <p style="margin: 0; margin-top: 15px;">
