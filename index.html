@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -39,7 +40,8 @@
         width: 100%;
         height: 100%;
         margin: 0;
-        font-family: Alegreya;
+        font-family: system-ui;
+        font-size: 10pt;
       }
 
       #wrapper {
@@ -164,16 +166,16 @@
           <div id="intro">
             <div id="intro-text">
               <p>
-                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer-Aided Programming Group
+                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer Assisted Programming Group
                   and <span class="hoverable"><a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a></span> in the Computational Cognitive Science Group.
-                  Currently, I am exploring the intersection of programming languages, artificial intelligence, and cognitive 
+                  Currently, I explore the intersection of programming languages, artificial intelligence, and cognitive 
                   science, with the goal of developing more human-like AI systems. Specifically, I investigate the hypothesis 
-                  that program synthesis may be a route to achieving this goal. I previously received my BS degrees in 
+                  that <b>program synthesis</b> may be a route to achieving this goal. I previously received my BS degrees in 
                   computer science and math. 
               </p>
               <p>
-                My broad interests are in the following areas: program synthesis, neuro-symbolic techniques, 
-                probabilistic programs, formal methods, computational cognitive science, and causal inference.
+                Broadly, I am interested in the following areas: program synthesis, neuro-symbolic techniques, 
+                probabilistic programs, formal methods, and computational cognitive science.
               </p>
               <p>Feel free to contact me at [first][last]@mit.edu.</p>
             </div>
@@ -194,7 +196,8 @@
                 We have developed a simple domain to explore this hypothesis, consisting of Atari-style, 
                 time-varying grid worlds. We express causal mechanisms in these worlds
                 using a functional reactive programming language called <span class="hoverable"><a href="https://github.com/riadas/Autumn.jl">Autumn</a></span>, which we designed to concisely
-                capture these dynamics. Some Autumn programs are shown below.
+                capture these dynamics. Some Autumn programs are shown below. Our objective is to synthesize the 
+                underlying Autumn program given a short sequence of observed grid frames and user actions. 
             </p>
 
             <div id="gif-box" style="display: flex; 
@@ -220,11 +223,14 @@
                 a proof-of-concept that program synthesis may be an effective model 
                 of causal theory induction, our progress has revealed an interesting
                 story beyond this application. We currently synthesize Autumn programs by combining 
-                standard functional synthesis techniques with an <i>automata synthesis</i>
+                standard <b>functional synthesis</b> techniques with an <b>automata synthesis</b>
                 approach, which discovers the time-varying latent state in the program. Uniting 
                 functional and automata learning in this way seems to apply beyond Autumn to the 
-                inductive synthesis of general functional reactive programs. Our work is still ongoing, 
-                but we are excited to develop this direction further. 
+                inductive synthesis of general functional reactive programs. Further, it aligns with
+                the fact that humans perform both stateless (functional) and stateful (automata) reasoning when deriving 
+                explanations, suggesting our approach is a step in the right direction towards 
+                more human-like AI. Our work is still ongoing, but we are excited to develop these 
+                directions further, along with neuro-symbolic extensions.  
             </p>
             <p>
                 For more information about this project, check out the workshop paper below. A more up-to-date 
@@ -236,7 +242,7 @@
                 Synthesis of Reactive Programs with Structured Latent State. 
                 <i>Machine Learning and Causal </i>
                 <i>Inference Workshop (WHY-21)</i> and <i>Advances in Programming Languages and Neurosymbolic Systems Workshop (AIPLANS), NeurIPS 2021.</i> <br/> 
-                [<span class="hoverable"><a href="files/Autumn_AIPLANS_Workshop_Submission (4).pdf">paper</a></span>, <span class="hoverable"><a href="files/Autumn_WHY21_Workshop_Poster (2).pdf">poster</a></span>]
+                [<span class="hoverable"><a href="files/Autumn_AIPLANS_Workshop_Submission (4).pdf">paper</a></span>, <span class="hoverable"><a href="files/autumn_why21_workshop_poster.pdf">why21 poster</a></span>, <span class="hoverable"><a href="files/autumn_aiplans_workshop_poster.pdf">aiplans poster</a></span>]
               </p>
 
               <p style="margin: 0; margin-top: 15px;">
