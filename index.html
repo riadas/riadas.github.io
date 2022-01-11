@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -60,6 +61,17 @@
         min-width: 300px;
         height: fit-content;
         padding-bottom: 100px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        #content-wrapper {
+          width: 80%;
+        }
+
+        #pic {
+          display: none;
+        }
       }
 
       #header {
@@ -166,8 +178,9 @@
           <div id="intro">
             <div id="intro-text">
               <p>
-                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer Assisted Programming Group
-                  and <span class="hoverable"><a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a></span> in the Computational Cognitive Science Group.
+                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer Assisted Programming Group,
+                  <span class="hoverable"><a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a></span> in the Computational Cognitive Science Group, and 
+                  <span class="hoverable"><a href="http://www.zenna.org/">Zenna Tavares</a></span> at the Zuckerman Institute of Columbia University.
                   Currently, I explore the intersection of programming languages, artificial intelligence, and cognitive 
                   science, with the goal of developing more human-like AI systems. Specifically, I investigate the hypothesis 
                   that <b>program synthesis</b> may be a route to achieving this goal. I previously received my BS degrees in 
@@ -180,7 +193,7 @@
               <p>Feel free to contact me at [first][last]@mit.edu.</p>
             </div>
 
-            <img src="files/picture.jpg" style="width: 200px; height: 267px; margin-top: 20px;" alt="photo">
+            <img id="pic" src="files/picture.jpg" style="width: 200px; height: 267px; margin-top: 20px;" alt="photo">
           </div> 
           <div id="rest">
             <h1 style="font-size: 20px; margin-bottom: 10px;">Thesis (Ongoing)</h1>
