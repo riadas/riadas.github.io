@@ -170,7 +170,7 @@
         <div id="header"> 
           <h1>Ria Das</h1>
           <div id="header-links">
-            <h1><a href="files/Resume_Fall_2021.pdf"> <i class="far fa-file-alt"></i></a>&nbsp;&nbsp;
+            <h1><a href="files/Resume_Fall_2022.pdf"> <i class="far fa-file-alt"></i></a>&nbsp;&nbsp;
                 <a href="https://github.com/riadas"> <i class="fab fa-github"></i></a></h1>
           </div>          
         </div>
@@ -178,13 +178,15 @@
           <div id="intro">
             <div id="intro-text">
               <p>
-                  I am an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer Assisted Programming Group,
+                  I am a first-year PhD student in computer science at Stanford University, currently on leave.
+                  
+                  Previously, I was an MEng student at MIT, working with <span class="hoverable"><a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a></span> in the Computer Assisted Programming Group,
                   <span class="hoverable"><a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a></span> in the Computational Cognitive Science Group, and 
-                  <span class="hoverable"><a href="http://www.zenna.org/">Zenna Tavares</a></span> at the Zuckerman Institute of Columbia University.
-                  Currently, I explore the intersection of programming languages, artificial intelligence, and cognitive 
-                  science, with the goal of developing more human-like AI systems. Specifically, I investigate the hypothesis 
-                  that <b>program synthesis</b> may be a route to achieving this goal. I previously received my BS degrees in 
-                  computer science and math. 
+                  <span class="hoverable"><a href="http://www.zenna.org/">Zenna Tavares</a></span> at the Zuckerman Institute of Columbia University and Basis Research Institute.
+                  For my thesis, I explored the intersection of programming languages, artificial intelligence, and cognitive 
+                  science, with the goal of developing more human-like AI systems. Specifically, I investigated the hypothesis 
+                  that <b>program synthesis</b> may be a route to achieving this goal. In a past life, I received my BS degrees in 
+                  computer science and math from MIT. 
               </p>
               <p>
                 Broadly, I am interested in the following areas: program synthesis, neuro-symbolic techniques, 
@@ -196,9 +198,9 @@
             <img id="pic" src="files/picture.jpg" style="width: 200px; height: 267px; margin-top: 20px;" alt="photo">
           </div> 
           <div id="rest">
-            <h1 style="font-size: 20px; margin-bottom: 10px;">Thesis (Ongoing)</h1>
+            <h1 style="font-size: 20px; margin-bottom: 10px;">MEng Thesis</h1>
             <p style="margin:0;">
-              For my thesis, I have been working on modeling the human ability to efficiently learn 
+              For my thesis, I worked on modeling the human ability to efficiently learn 
               <i>causal theories</i> &ndash; explanations of which stimuli <i>cause</i> which changes in an environment &ndash;
               using program synthesis. For example, children can figure out the causal mechanism underlying a new toy or video 
               game in just a few minutes, a feat woefully out of reach of modern AI systems. By representing a causal model as a 
@@ -206,7 +208,7 @@
               data-efficient learning algorithms. 
             </p>
             <p>
-                We have developed a simple domain to explore this hypothesis, consisting of Atari-style, 
+                We developed a simple domain to explore this hypothesis, consisting of Atari-style, 
                 time-varying grid worlds. We express causal mechanisms in these worlds
                 using a functional reactive programming language called <span class="hoverable"><a href="https://github.com/riadas/Autumn.jl">Autumn</a></span>, which we designed to concisely
                 capture these dynamics. Some Autumn programs are shown below. Our objective is to synthesize the 
@@ -221,7 +223,7 @@
             >
                 <img src="gifs/egg.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
                 <img src="gifs/weather.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
-                <img src="gifs/sand2.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
+                <img src="gifs/sandcastle.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
                 <img src="gifs/weather2.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
 
                 <img src="gifs/ants.gif" style="width: 120px; height: 120px; margin-top: 10px; padding: 10px;" alt="photo">
@@ -234,8 +236,8 @@
             <p>
                 While the original motivation behind this project was to develop
                 a proof-of-concept that program synthesis may be an effective model 
-                of causal theory induction, our progress has revealed an interesting
-                story beyond this application. We currently synthesize Autumn programs by combining 
+                of causal theory induction, our work revealed an interesting
+                story beyond this application. Specifically, we synthesize Autumn programs by combining 
                 standard <b>functional synthesis</b> techniques with an <b>automata synthesis</b>
                 approach, which discovers the time-varying latent state in the program. Uniting 
                 functional and automata learning in this way seems to apply beyond Autumn to the 
@@ -246,8 +248,7 @@
                 directions further, along with neuro-symbolic extensions.  
             </p>
             <p>
-                For more information about this project, check out the workshop paper below. A more up-to-date 
-                manuscript is (hopefully!) coming soon to this website &ndash; stay tuned!
+                For more information about this project, check out our upcoming POPL paper or workshop papers on the Autumn system below.
             </p>
             <p style="display: none;">
               <span style="color: #1f47db;"><b>[UPDATE 01/22]</b></span> Below 
@@ -259,6 +260,20 @@
           
             <h1 style="font-size: 20px; margin-bottom: 10px; margin-top: 20px;">Publications</h1>
             <p style="margin: 0">
+              <b>Ria Das</b>, Joshua B. Tenenbaum, Armando Solar-Lezama, Zenna Tavares. 
+              Combining Functional and Automata Synthesis to Learn Causal Reactive Programs. 
+              <i>ACM SIGPLAN Symposium on Principles of Programming Languages (POPL) 2023.</i> To appear. <br/> 
+              [<span class="hoverable"><a href="files/autumn_popl_submission.pdf">paper</a></span>]
+            </p>
+
+            <p style="margin: 0; margin-top: 15px;">
+              <b>Ria Das</b>, Joshua B. Tenenbaum, Armando Solar-Lezama, Zenna Tavares.
+              Combining Functional and Automata Synthesis to Learn Causal Reactive Programs. 
+              <i>Beyond Bayes: Paths Towards Universal Reasoning Systems Workshop, ICML 2022.</i><br>
+              [<span class="hoverable"><a href="files/Autumn_Beyond_Bayes_Workshop_Submission (2).pdf">paper</a></span>, <span class="hoverable"><a href="files/Autumn_Beyond_Bayes_Workshop_Poster (2).pdf">poster</a></span>]
+            </p>
+            
+            <p style="margin: 0; margin-top: 15px">
                 <b>Ria Das</b>, Joshua B. Tenenbaum, Armando Solar-Lezama, Zenna Tavares. 
                 Synthesis of Reactive Programs with Structured Latent State. 
                 <i>Machine Learning and Causal </i>
